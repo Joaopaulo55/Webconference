@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição - WebConferência 2024</title>
+    <link rel="stylesheet" href="styles/style.css"> <!-- Importa o arquivo de estilo externo -->
+</head>
+
+<body class="inscricao">
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>WebConferência</h1> <!-- Título principal da página -->
+    </header>
+
+    <!-- Barra de Navegação -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li> <!-- Link para a página Início -->
+            <li><a href="oradores.html">Oradores</a></li> <!-- Link para a página Oradores -->
+            <li><a href="patrocinadores.html">Patrocinadores</a></li> <!-- Link para a página Patrocinadores -->
+            <li><a href="contato.html">Contacto</a></li> <!-- Link para a página Contato -->
+            <li><a href="inscricao.html">Inscrição</a></li> <!-- Link para a própria página de Inscrição -->
+        </ul>
+    </nav>
+
+    <!-- Formulário de Inscrição -->
+    <section id="registrationForm">
+        <h2>Inscrição</h2>
+
+        <!-- Formulário HTML com campos de entrada e botão de envio -->
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Digite seu telefone">
+            </div>
+
+            <div class="form-group">
+                <label for="organization">Organização:</label>
+                <input type="text" id="organization" name="organization" placeholder="Nome da sua organização">
+            </div>
+
+            <div class="form-group">
+                <label for="role">Cargo:</label>
+                <input type="text" id="role" name="role" placeholder="Seu cargo na organização">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" placeholder="Digite uma mensagem"></textarea>
+            </div>
+
+            <button type="submit">Enviar Inscrição</button> <!-- Botão de envio do formulário -->
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 WebConferência</p> <!-- Informação de copyright -->
+    </footer>
+
+</body>
+</html>

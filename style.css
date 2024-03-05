@@ -1,0 +1,288 @@
+/* Barra de menu */
+nav {
+    background-color: #3498db;
+    padding: 15px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Adicionado para centralizar verticalmente */
+}
+
+nav a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+/* Estilos Responsivos */
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Alterado para empilhar itens verticalmente */
+        text-align: center; /* Adicionado para centralizar texto */
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+}
+
+/* Estilos específicos para a página Inicial */
+body.index {
+    background-color: #ecf0f1;
+    color: #333;
+}
+
+#presentation {
+    padding: 50px;
+    text-align: justify-all;
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.infoCarousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.infoCard {
+    scroll-snap-align: start;
+    flex: 0 0 100%;
+    padding: 20px;
+    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.infoCard strong {
+    color: #333;
+}
+
+
+
+
+/* Estilos específicos para a página Oradores */
+body.oradores {
+    background-color: #d2dae2;
+    color: #333;
+}
+
+#speakerList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.speaker {
+    flex: 0 0 45%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.speaker:hover {
+    transform: scale(1.05);
+}
+
+.speaker h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.speaker p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.socialIcons {
+    display: flex;
+}
+
+.socialIcons a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.socialIcons img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.socialIcons img:hover {
+    transform: scale(1.2);
+}
+
+/* Estilos específicos para a página Patrocinadores */
+body.patrocinadores {
+    background-color: #ecf0f1;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#sponsorList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.sponsor {
+    flex: 0 0 45%;
+    margin: 30px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.sponsor:hover {
+    transform: scale(1.05);
+}
+
+.sponsor img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.sponsor p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Estilos específicos para a página de Contato */
+body.contato {
+    background-color: #ecf0f1;
+    color: #333;
+}
+
+#contactForm {
+    padding: 50px;
+}
+
+#contactForm form {
+    display: grid;
+    gap: 15px;
+}
+
+#contactForm label {
+    font-weight: bold;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contactForm button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contactForm button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilos específicos para a página de Inscrição */
+body.inscricao {
+    background-color: #ecf0f1;
+    color: #333;
+}
+
+#registrationForm {
+    padding: 50px;
+}
+
+#registrationForm h2 {
+    text-align: center;
+}
+
+#registrationForm form {
+    display: grid;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#registrationForm input,
+#registrationForm textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#registrationForm button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#registrationForm button:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 5px;
+    margin-top: auto;
+}
